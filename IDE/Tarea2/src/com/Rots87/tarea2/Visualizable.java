@@ -25,7 +25,7 @@ package com.Rots87.tarea2;
 
 /**
  *
- * @author SOPORTE-T
+ * @author Rots87
  */
 public interface Visualizable {
     public void marcarVisto(boolean visto);

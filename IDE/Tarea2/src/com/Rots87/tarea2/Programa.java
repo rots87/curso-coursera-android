@@ -25,61 +25,61 @@ package com.Rots87.tarea2;
 
 /**
  *
- * @author SOPORTE-T
+ * @author Rots87.
  */
-public class Serie extends Programa{
+public class Programa {
+  private String titulo;
+  private String genero;
+  private String creador;
+  private boolean visto;
 
-    private String titulo;
-    private byte noTemporadas = 1;
-    private boolean visto = false;
-    private String genero;
-    private String creador;
-    private short duracion; // Duracion es en minutos
-    
-    public Serie(){
-        //Constructtor por defecto
-        this.visto = false;
-    }
-    
-    public Serie(String titulo, String creador){
-        //Segundo constructor
-        this.visto = false;
-    }
-    
-    public Serie(String titulo, String creador, byte noTemporadas, String genero, short duracion){
-         //tercer constructor
-        this.visto = false;
-    }
-
-
-
-    public byte getNoTemporadas() {
-        return noTemporadas;
-    }
-
+  public Programa(){
   
-
-
-    public short getDuracion() {
-        return duracion;
+  }
+  
+ /* public Programa(){
+  
+  }*/
+  
+  public Programa(String titulo, String genero){
+      this.titulo = titulo;
+      this.genero = genero;
+      this.creador = null;
+      this.visto = false;
+  }
+  
+  
+    public String getTitulo() {
+        return titulo;
     }
 
-
-
-    public void setNoTemporadas(byte noTemporadas) {
-        this.noTemporadas = noTemporadas;
+    public String getGenero() {
+        return genero;
     }
 
-
-
-    public void setDuracion(short duracion) {
-        this.duracion = duracion;
+    public String getCreador() {
+        return creador;
     }
 
-    @Override
-    public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    public boolean isVisto() {
+        return visto;
     }
-    
-    
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public void setCreador(String creador) {
+        this.creador = creador;
+    }
+
+    public void setVisto(boolean visto) {
+        this.visto = visto;
+    }
+  
+  
 }

@@ -27,13 +27,12 @@ package com.Rots87.tarea2;
  *
  * @author SOPORTE-T
  */
-public class Pelicula {
-  private String titulo;
-  private String genero;
-  private String creador;
+public class Pelicula extends Programa{
+    
   private short año;
   private short duracion; //en minutos
-  private boolean visto;
+  
+
 
   public Pelicula(){
     //Constructor por default
@@ -41,27 +40,14 @@ public class Pelicula {
 
   public Pelicula(String titulo, String genero){
     //Segundo constructor
-    this.creador = null;
+    super(titulo,genero);
     this.año = 0;
     this.duracion = 0;
-    this.visto = false;
   }
 
   public Pelicula(String titulo, String genero, String creador, short año, short duracion){
     //Tercer constructor
     this.visto = false;//No dice que lo creemos pero por logica asumo que es la mejor forma de iniciar el objeto en este contructor
-  }
-
-  public String getTitulo(){
-    return this.titulo;
-  }
-
-  public String getGenero(){
-    return this.genero;
-  }
-
-  public String getCreador(){
-    return this.creador;
   }
 
   public short getAño(){
@@ -72,17 +58,7 @@ public class Pelicula {
     return this.duracion;
   }
 
-  public void setTitulo(String titulo){
-    this.titulo = titulo;
-  }
 
-  public void setGenero(String genero){
-    this.genero = genero;
-  }
-
-  public void setCreador(String creador){
-    this.creador = creador;
-  }
 
   public void setAño(short año){
     this.año = año;
