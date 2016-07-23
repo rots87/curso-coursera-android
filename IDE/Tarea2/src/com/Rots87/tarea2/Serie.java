@@ -29,26 +29,24 @@ package com.Rots87.tarea2;
  */
 public class Serie extends Programa{
 
-    private String titulo;
     private byte noTemporadas = 1;
-    private boolean visto = false;
-    private String genero;
-    private String creador;
     private short duracion; // Duracion es en minutos
     
     public Serie(){
         //Constructtor por defecto
-        this.visto = false;
+        
     }
     
-    public Serie(String titulo, String creador){
+    public Serie(String titulo, String creador, boolean visto){
         //Segundo constructor
-        this.visto = false;
+        super(titulo,creador,visto);
     }
     
     public Serie(String titulo, String creador, byte noTemporadas, String genero, short duracion){
          //tercer constructor
-        this.visto = false;
+        super(titulo,creador,genero);
+        this.noTemporadas = noTemporadas;
+        this.duracion = duracion;
     }
 
 

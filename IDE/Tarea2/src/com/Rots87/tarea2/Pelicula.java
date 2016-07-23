@@ -47,7 +47,10 @@ public class Pelicula extends Programa{
 
   public Pelicula(String titulo, String genero, String creador, short año, short duracion){
     //Tercer constructor
-    this.visto = false;//No dice que lo creemos pero por logica asumo que es la mejor forma de iniciar el objeto en este contructor
+    super(titulo,genero,creador);
+    this.año = año;
+    this.duracion = duracion;
+    
   }
 
   public short getAño(){

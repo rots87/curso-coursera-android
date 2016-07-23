@@ -34,7 +34,7 @@ public class Programa {
   private boolean visto;
 
   public Programa(){
-  
+      this.visto = false;
   }
   
  /* public Programa(){
@@ -48,6 +48,19 @@ public class Programa {
       this.visto = false;
   }
   
+  public Programa(String titulo, String genero, String creador){
+      this.titulo = titulo;
+      this.genero = genero;
+      this.creador = creador;
+      this.visto = false;
+  }
+  
+    public Programa(String titulo, String creador, boolean visto){
+      this.titulo = titulo;
+      this.genero = null;
+      this.creador = creador;
+      this.visto = visto;
+  }
   
     public String getTitulo() {
         return titulo;
