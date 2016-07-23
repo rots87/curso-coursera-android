@@ -82,6 +82,7 @@ public class Serie extends Programa{
         System.out.println("Director: "+this.getCreador());
         System.out.println("Visto: "+this.isVisto());
         System.out.println("Duracion: "+this.duracion);
+        System.out.println("Tiempo Visto: "+this.tiempoVisto());
         return "";
     }
     

@@ -22,6 +22,7 @@
  * THE SOFTWARE.
  */
 package com.Rots87.tarea2;
+import java.util.Random;
 
 /**
  *
@@ -106,7 +107,8 @@ public class Programa implements Visualizable {
     
   @Override
     public int tiempoVisto(){
-        return 0; //Valor por el momento para analizar luego
+        //Random rnd = new Random();
+        return (int)(Math.random()*100+1); //Valor por el momento para analizar luego
     }
   
 }
