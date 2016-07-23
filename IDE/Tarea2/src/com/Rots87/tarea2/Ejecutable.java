@@ -29,8 +29,11 @@ package com.Rots87.tarea2;
  */
 public class Ejecutable {
     public static void main (String[] args){
+        //Declaracion de Variables
         Pelicula[] arrayPeli = new Pelicula[5];
         Serie[] arraySerie = new Serie[5];
+        byte flag = 0;
+        //Fin de Declaraciones
         
         //Inicializacion de Arrays
         arrayPeli[0] = new Pelicula();
@@ -46,5 +49,44 @@ public class Ejecutable {
         arraySerie[4] = new Serie();
         
         //Fin de la inicializacion de arrays
+        //Marcar como visto algunas peliculas y series
+        arrayPeli[0].marcarVisto();
+        arrayPeli[4].marcarVisto();
+        arraySerie[3].marcarVisto();
+        
+        //Imprimir cuales son las peliculas y series ya vistas
+        for(byte i=0; i<5; i++ ){
+            if (arrayPeli[i].esVisto()){
+                arrayPeli[i].toString();
+                System.out.println();
+            }
+        }
+        for(byte i=0; i<5; i++ ){
+            if (arraySerie[i].esVisto()){
+                arraySerie[i].toString();
+                System.out.println();
+            }
+        }
+        
+        //Imprimir la pelicula mas reciente y serie con mas temporadas
+        //Para Peliculas
+        System.out.println("Pelicula Mas recuente");
+        for(byte i=0; i<4; i++ ){
+            if (arrayPeli[i].getAño()<arrayPeli[i+1].getAño()){
+                flag = (byte) (i+1);
+            }
+        }
+        String cadena = arrayPeli[flag].toString();
+        
+        //Para Series
+        flag = 0;
+        System.out.println();
+        System.out.println("Serie con mayor numero de temporadas");
+        for(byte i=0; i<4; i++ ){
+            if (arraySerie[i].getNoTemporadas()<arraySerie[i+1].getNoTemporadas()){
+                flag = (byte) (i+1);
+            }
+        }
+        cadena = arraySerie[flag].toString();
 }
 }

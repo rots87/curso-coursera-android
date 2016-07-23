@@ -95,7 +95,7 @@ public class Programa implements Visualizable {
     }
   
   @Override
-    public void marcarVisto(boolean visto){
+    public void marcarVisto(){
        this.visto = true; 
     }
     

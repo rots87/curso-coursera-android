@@ -76,7 +76,13 @@ public class Serie extends Programa{
 
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Titulo: " + this.getTitulo());
+        System.out.println("noTemporadas: " + this.noTemporadas + " Temporadas");
+        System.out.println("Genero: " + this.getGenero());
+        System.out.println("Director: "+this.getCreador());
+        System.out.println("Visto: "+this.isVisto());
+        System.out.println("Duracion: "+this.duracion);
+        return "";
     }
     
     

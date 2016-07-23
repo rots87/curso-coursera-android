@@ -28,7 +28,7 @@ package com.Rots87.tarea2;
  * @author Rots87
  */
 public interface Visualizable {
-    public void marcarVisto(boolean visto);
+    public void marcarVisto();
     public boolean esVisto();
     public int tiempoVisto();
 }
