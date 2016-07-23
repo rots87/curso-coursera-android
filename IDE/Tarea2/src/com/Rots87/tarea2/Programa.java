@@ -27,7 +27,7 @@ package com.Rots87.tarea2;
  *
  * @author Rots87.
  */
-public class Programa {
+public class Programa implements Visualizable {
   private String titulo;
   private String genero;
   private String creador;
@@ -94,5 +94,19 @@ public class Programa {
         this.visto = visto;
     }
   
+  @Override
+    public void marcarVisto(boolean visto){
+       this.visto = true; 
+    }
+    
+  @Override
+    public boolean esVisto(){
+        return this.visto;
+    }
+    
+  @Override
+    public int tiempoVisto(){
+        return 0; //Valor por el momento para analizar luego
+    }
   
 }
