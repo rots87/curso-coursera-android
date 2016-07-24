@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 package com.Rots87.tarea2;
-import java.util.Random;
+
 
 /**
  *
