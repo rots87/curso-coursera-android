@@ -62,3 +62,4 @@ gen-external-apklibs
 hs_err_pid*
 IDE/.metadata/
 IDE/.recommenders/
+/IDE/Tarea3/nbproject/private/
