@@ -68,8 +68,28 @@ public class Ejecutable {
         e = Peliculas.get(3);
         e.marcarVisto();
         Peliculas.set(3, e);
-        
+        s = Series.get(1);
+        s.marcarVisto();
+        Series.set(1, s);
+        s = Series.get(0);
+        s.marcarVisto();
+        Series.set(0, s);
+        //Fin de marcado de series vistas
         //Imprimir cuales son las peliculas y series ya vistas
+        try{
+            for(int flag = 0; flag<5; flag++){
+                s=Series.get(flag);
+                if(s.esVisto()){
+                    s.toString();
+                }
+                e=Peliculas.get(flag);
+                if(e.esVisto()){
+                    e.toString();
+                }
+            }
+        }catch(Exception err){
+            System.out.println("Hubo un error al leer los datos de los programas");
+        }
 
 }
 }
